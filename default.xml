@@ -26,11 +26,11 @@
            sync-j="4" />
 
   <!-- BEGIN SUDAMOD --> 
-  <project path="build" remote="suda" revision="sm-3.1" name="SudaMod/android_build" groups="pdk,tradefed" >
+  <!--<project path="build" remote="suda" revision="sm-3.1" name="SudaMod/android_build" groups="pdk,tradefed" >
     <copyfile src="core/root.mk" dest="Makefile" />
-  </project>
+  </project>-->
 
-  <project path="android" remote="suda" revision="sm-3.1" name="SudaMod/android" />
+  <!--<project path="android" remote="suda" revision="sm-3.1" name="SudaMod/android" />-->
   <project path="external/suda/SudaSDKs" remote="suda" revision="sm-3.1" name="SudaMod/android_external_suda_SudaSDKs" />
   <project path="external/noto-fonts" remote="suda" revision="sm-3.1" name="SudaMod/android_external_noto-fonts" />
   <project name="LineageOS/android_device_qcom_common" path="device/qcom/common" remote="github" revision="cm-14.1" />
@@ -539,5 +539,5 @@
   <project path="tools/tradefederation" name="platform/tools/tradefederation" groups="notdefault,tradefed" remote="aosp" />
 
   <include name="snippets/cm.xml" />
-
+  <include name="snippets/sudaido.xml" />
 </manifest>
