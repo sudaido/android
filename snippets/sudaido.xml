@@ -1,18 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
+
+  <remote name="dinphy"
+          fetch="https://github.com/sudaido" />
+		  
   <!-- sudaido additions -->
-  <project path="build" name="sudaido/android_build" groups="pdk,tradefed" remote="github" revision="sm-3.1" >
+  <project path="build" name="android_build" groups="pdk,tradefed" remote="dinphy" revision="sm-3.1" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
-  <project path="device/xiaomi/ido" name="sudaido/suda_device_xiaomi_ido" remote="github" revision="mkn-mr1" />
-  <project path="external/sony/boringssl-compat" name="sudaido/android_external_sony_boringssl-compat" remote="github" revision="cm-14.1" />
-  <project path="external/stlport" name="sudaido/android_external_stlport" remote="github" revision="cm-14.1" />
-  <project path="frameworks/base" name="sudaido/android_frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="github" revision="sm-3.1"/>
-  <project path="kernel/xiaomi/msm8916" name="sudaido/android_kernel_xiaomi_msm8916" remote="github" revision="mkn-mr1" />  
-  <project path="packages/apps/PackageInstaller" name="sudaido/android_packages_apps_PackageInstaller" groups="pdk-fs" remote="github" revision="sm-3.1" />
-  <project path="packages/apps/Venus" name="sudaido/android_packages_apps_Venus" remote="github" revision="mkn-mr1" />
-  <project path="packages/apps/Recorder" name="sudaido/android_packages_apps_Recorder" remote="github" revision="mkn-mr1" />  
-  <project path="packages/resources/devicesettings" name="sudaido/android_packages_resources_devicesettings" remote="github" revision="cm-14.1" />
-  <project path="vendor/xiaomi/ido" name="sudaido/android_vendor_xiaomi_ido" remote="github" revision="mkn-mr1" />
-  <project path="vendor/sm" name="sudaido/android_vendor_sm" remote="github" revision="sm-3.1" />  
+  <project path="device/xiaomi/ido" name="amdroid_device_xiaomi_ido" remote="dinphy" revision="mkn-mr1" />
+  <project path="external/sony/boringssl-compat" name="android_external_sony_boringssl-compat" remote="dinphy" revision="cm-14.1" />
+  <project path="external/stlport" name="android_external_stlport" remote="dinphy" revision="cm-14.1" />
+  <project path="frameworks/base" name="android_frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="dinphy" revision="sm-3.1"/>
+  <project path="kernel/xiaomi/msm8916" name="android_kernel_xiaomi_msm8916" remote="dinphy" revision="mkn-mr1" />  
+  <project path="packages/apps/PackageInstaller" name="android_packages_apps_PackageInstaller" groups="pdk-fs" remote="dinphy" revision="sm-3.1" />
+  <project path="packages/apps/Venus" name="android_packages_apps_Venus" remote="dinphy" revision="mkn-mr1" />
+  <project path="packages/apps/Recorder" name="android_packages_apps_Recorder" remote="dinphy" revision="mkn-mr1" />  
+  <project path="packages/resources/devicesettings" name="android_packages_resources_devicesettings" remote="dinphy" revision="cm-14.1" />
+  <project path="vendor/xiaomi/ido" name="android_vendor_xiaomi_ido" remote="dinphy" revision="mkn-mr1" />
+  <project path="vendor/sm" name="android_vendor_sm" remote="dinphy" revision="sm-3.1" />  
 </manifest>
